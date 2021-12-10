@@ -7,7 +7,6 @@ type Video = {
   id: string;
   status: "uploading" | "done";
   fileName: string;
-  progress: number;
 };
 
 const initialState: Video[] = [];
@@ -26,7 +25,6 @@ function App() {
         id,
         status: "uploading",
         fileName,
-        progress: 0,
       },
     ]);
     // 다음 검수 대상인 영상의 새로운 파일 이름을 지정한다.
