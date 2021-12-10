@@ -18,7 +18,7 @@ function App() {
   const handleRegister: MouseEventHandler<HTMLButtonElement> = (e) => {
     e.preventDefault();
     const id = uuidv1(); // 임의의 중복되지 않는 id를 생성
-    // state에 새로운 영상을 추가하고, status를 uploading으로, progress를 0으로 설정한다.
+    // state에 새로운 영상을 추가하고, status를 uploading으로 설정한다.
     setState([
       ...state,
       {
